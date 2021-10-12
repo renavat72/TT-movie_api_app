@@ -1,0 +1,103 @@
+@media screen and (max-width: 900px){
+    .card {
+      flex-direction: column;
+    }
+    .cardInfo {
+      margin: 0 8px;
+    }
+    .cardImg{
+      width: 100%;
+      max-width: 500px;
+      max-height: 500px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .cardCommentsBlock{
+      margin-top: 12px;
+      padding-bottom: 12px;
+    }
+    .cardTitle{
+     text-align: center;
+     margin-top: 8px;
+    }
+  }
+  @media screen and (min-width: 900px){
+    .card {
+      height: 400px;
+      max-width: 1400px;
+    }
+    .cardInfo {
+      width: 800px;
+      margin-top: 12px;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    .cardImg{
+      width: 200px;
+      height: 400px;
+    }
+    .cardCommentsBlock{
+      margin-left: auto;
+      max-width: 400px;
+    }
+  }
+  .card {
+    display: flex;
+
+    margin: 16px;
+
+    background: color #f0f0f0;
+    box-shadow: 0px 5px 10px 2px rgba(201, 201, 201, 0.315);
+  }
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardTitle{
+    font-size: larger;
+    font-weight: bold;
+  }
+  .cardGenr{
+    margin: 8px 0;
+    color:gray;
+    font-size: small;
+  }
+  .cardCommentsBlock{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #FDFDFD;
+  }
+  .inputsBlock{
+    margin-top: auto;
+    padding-top: 4px;
+    border-top: solid 0.3px gainsboro;
+  }
+  .comments{
+    overflow-y:auto;
+  }
+  .inputsComment {
+    display: block;
+    width: 100%;
+    margin: 6px auto;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    transition: all 0.3s;
+  }
+  .submitBtn{
+    margin: 8px 0;
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px; 
+  }
+  .emptyComments{
+    text-align: center;
+    font-weight: 600;
+    color:#979797;
+  }
